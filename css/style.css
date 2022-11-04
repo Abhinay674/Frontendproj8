@@ -1,0 +1,453 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+## Icons
+
+For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
+/* font-family: 'Bai Jamjuree', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #fff;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  color: hsl(201, 11%, 66%);
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+header {
+  padding: 3rem;
+  text-align: center;
+  margin-bottom:4rem;
+}
+
+header img{
+  display: block;
+  margin: 3rem auto;
+  width: 30%;
+}
+
+header h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color:hsl(210, 10%, 33%);
+  margin-bottom: 1rem;
+}
+header p {
+  font-size: 0.91rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.platform {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  align-items:center;
+  justify-content: space-between;
+  font-size:1rem;
+}
+
+.btn {
+  cursor: pointer;
+  text-align: center;
+  padding:10px 5px;
+  border: 0;
+  border-radius: 20px;
+  min-width: 100%;
+  color: #fff;
+  font-size:0.7rem;
+}
+
+.btn.ios {
+  background:hsl(171, 66%, 44%);
+}
+
+.btn.mac {
+  background: hsl(233, 100%, 69%);
+}
+section {
+  padding: 3rem;
+  text-align: center;
+}
+.box {
+  margin-bottom: 3rem;
+}
+.box h2 {
+  font-size: 2rem;
+  font-weight: 600 !important;
+  color:hsl(210, 10%, 33%);
+  margin-bottom: 1rem;
+}
+.box p{
+  font-size: 0.89rem;
+  line-height: 1.5;
+}
+
+.first {
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+}
+.first img {
+  max-width:100%;
+  margin-bottom: 3rem;
+}
+
+.first ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 280px;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.first ul li span {
+  font-size: 1.5rem;
+  color:hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+
+.first ul p {
+  text-align: center;
+ font-size: 0.85rem;
+ line-height: 1.6;
+}
+.second h2 {
+  font-size: 1.5rem;
+  font-weight: 600 !important;
+  color:hsl(210, 10%, 33%);
+  margin-bottom: 1rem;
+}
+
+.second p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 6rem;
+}
+.second ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 280px;
+  text-align: center;
+  margin-bottom: 20rem;
+}
+.second img {
+  max-width: 100%;
+}
+
+.second ul img {
+  margin-bottom: 1.5rem !important;
+}
+
+.second h3 {
+  color:hsl(210, 10%, 33%);
+  font-weight: 600 !important;
+  margin-bottom: 1rem;
+}
+
+.second ul  p {
+  font-size:0.86rem;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.flex img {
+  width: 45%;
+} 
+
+.flex img:nth-child(even){
+  width: 40%;
+}
+.secondSection {
+  margin-bottom: 6rem;
+}
+.secondSection div:last-child h2 {
+  font-weight:600;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color:hsl(210, 10%, 33%);
+}
+
+.secondSection div:last-child p {
+  font-size: 0.91rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+footer {
+  text-align:center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  height: 450px;
+  background:#eeeeee;
+  color:  hsl(210, 10%, 33%);
+}
+footer a {
+  color:  hsl(210, 10%, 33%);
+}
+footer img{
+  width:20%;
+  margin-bottom: 0.5rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  text-align:center;
+  height: 200px;
+}
+
+.social{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.social img {
+  width: 15%;
+}
+
+@media (min-width: 376px) and (max-width:1440px) {
+  header {
+    padding: 1rem;
+    text-align: center;
+    margin-bottom:0.5rem;
+  }
+  header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color:hsl(210, 10%, 33%);
+    margin-bottom: 1rem;
+  }
+  header img{
+    display: block;
+    margin: 1.5rem auto;
+    width: 5%;
+  }
+  header p {
+    width: 35%;
+    margin:0 auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  ul.platform {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    font-size:1rem;
+    width: 150px;
+    margin: 0 auto;
+  }
+  ul.platform  li{
+    width: 40%;
+    margin: 0 5px;
+  }
+  .box {
+    margin-bottom: 4rem;
+  }
+  .box p{
+    font-size: 0.65rem;
+    width: 30%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .first {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .first img {
+    max-width: 50%;
+    margin-left: -5rem;
+  }
+  .first ul {
+    text-align: left;
+    max-width: 60%;
+    height: 350px;
+    margin-bottom: 5rem;
+    padding: 5px;
+  }
+  .first ul li span {
+    font-size: 1.5rem;
+    color:hsl(210, 10%, 33%);
+    font-weight: 600;
+  }
+  .first ul p {
+    text-align: left;
+   font-size: 1rem;
+   line-height: 1.6;
+   margin-top: 0.5rem;
+  }
+  .second h2 {
+    font-size: 1.5rem;
+    font-weight: 600 !important;
+    color:hsl(210, 10%, 33%);
+    margin-bottom: 1rem;
+  }
+  
+  .second p {
+    font-size: 0.65rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .second ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 280px;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  .second ul li {
+    width: 22.5%;
+    text-align:center;
+  }
+  .flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+  .flex img {
+    width: 8%;
+  } 
+  .flex img:nth-child(even){
+    width: 8%;
+  }
+  .secondSection div:last-child p {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 0.93rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .secondSection {
+    margin-bottom: 1rem !important;
+  }
+  footer {
+    text-align:center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    height: 200px;
+    background:#eeeeee;
+    color:  hsl(210, 10%, 33%);
+  }
+  footer img{
+    width:3%;
+    margin-bottom: 0.5rem;
+  }
+  
+  footer ul {
+    padding: 3rem;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align:left;
+    flex-wrap: wrap;
+    width: 800px;
+  }
+footer ul li:nth-child(2){
+  margin-left: 8rem;
+  margin-right: 3rem;
+}
+footer ul li:nth-child(5){
+  margin-left: 5rem;
+}
+  footer ul a {
+    text-align: left;
+    padding: 0 13px;
+    font-size: 1.1rem;
+    margin: 0 20px;
+  }
+  
+  .social{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+  }
+  .social img {
+    width: 25%;
+    margin:0 10px;
+  }
+}
